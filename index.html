@@ -32,6 +32,8 @@ window.addEventListener('message', event => {
         console.log(event.data); 
   //event.data;
     } else {
+      console.log("not safe"); 
+      console.log(event.data); 
         // The data was NOT sent from your site! 
         // Be careful! Do not use it. This else branch is
         // here just for clarity, you usually shouldn't needed.
