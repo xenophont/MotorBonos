@@ -29,6 +29,7 @@ window.addEventListener('message', event => {
     if (event.origin.startsWith('http://revamp.ijuego.es')) { 
         // The data was sent from your site.
         // Data sent with postMessage is stored in event.data:
+        console.log("safe");
         console.log(event.data); 
   //event.data;
     } else {
