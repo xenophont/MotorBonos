@@ -33,7 +33,11 @@ $(document).ready(function()
 
    window.addEventListener( "message",
           function (e) {
-                if(e.origin !== "https://revamp.ijuego.es" { console.log("unsafe");return; } 
+                if(e.origin !== "https://revamp.ijuego.es" )
+                {
+                 console.log("unsafe");
+                 return; 
+               } 
                 alert(e.data);
           },
           false);
@@ -43,7 +47,7 @@ $(document).ready(function()
 });
 
 </script>
-  
+
 </html>
 
 
