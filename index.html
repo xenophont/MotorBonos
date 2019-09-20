@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -36,7 +37,7 @@ window.addEventListener("message", receiveMessage, false);
 
 function receiveMessage(event) {
   if (event.origin !== "https://revamp.ijuego.es")
-  {
+  { 
     console.log("unsafe");
     return;
   }
