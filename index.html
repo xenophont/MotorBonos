@@ -23,7 +23,24 @@
     </div>
   </body>
 </html>
+
 <script>
+window.addEventListener("message", receiveMessage, false);
+
+function receiveMessage(event) {
+  if (event.origin !== "https://revamp.ijuego.es")
+  {
+    console.log("unsafe");
+    return;
+  }
+   console.log("safe");
+    console.log(event.data);
+
+  // ...
+}
+</script>
+
+<!--script>
 window.addEventListener('message', event => {
     // IMPORTANT: check the origin of the data! 
     if (event.origin.startsWith('http://revamp.ijuego.es')) { 
@@ -41,4 +58,4 @@ window.addEventListener('message', event => {
         return; 
     } 
 }); 
-</script>
+</script-->
