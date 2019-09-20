@@ -24,7 +24,14 @@
   </body>
 </html>
 
+
 <script>
+
+
+$(document).ready(function() 
+{
+  console.log("iframe ready");
+});
 window.addEventListener("message", receiveMessage, false);
 
 function receiveMessage(event) {
