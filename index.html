@@ -33,19 +33,16 @@
 $(document).ready(function() 
 {
   console.log("iframe ready");
-  window.addEventListener("message", receiveMessage, false);
 
-function receiveMessage(event) {
-  if (event.origin !== "https://revamp.ijuego.es")
-  { 
-    console.log("unsafe");
-    return;
-  }
-   console.log("safe");
-    console.log(event.data);
+   window.addEventListener( "message",
+          function (e) {
+                if(e.origin !== "https://revamp.ijuego.es" { console.log("unsafe");return; } 
+                alert(e.data);
+          },
+          false);
 
-  // ...
-}
+
+ 
 });
 
 </script>
