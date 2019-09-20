@@ -40,8 +40,17 @@ window.addEventListener( "message",
                  console.log("unsafe");
                  return; 
                } 
-               gameInstance.SendMessage(e.data);//('myObject','changeText','buen viaje juan');
-                //alert(e.data);
+
+              if(e.data =="Cambiar_Texto")
+              {
+                 gameInstance.SendMessage('myObject','changeText','buen viaje juan');
+              }
+              else
+              {
+                alert(e.data);
+              }
+              
+                
           },
           false);
 
