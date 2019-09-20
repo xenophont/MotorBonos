@@ -40,7 +40,8 @@ window.addEventListener( "message",
                  console.log("unsafe");
                  return; 
                } 
-                alert(e.data);
+               gameInstance.SendMessage(e.data);
+                //alert(e.data);
           },
           false);
 
