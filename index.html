@@ -30,8 +30,10 @@
 $(document).ready(function() 
 {
   console.log("iframe ready");
+ 
+});
 
-   window.addEventListener( "message",
+window.addEventListener( "message",
           function (e) {
                 if(e.origin !== "https://revamp.ijuego.es" )
                 {
@@ -42,9 +44,6 @@ $(document).ready(function()
           },
           false);
 
-
- 
-});
 
 </script>
 
