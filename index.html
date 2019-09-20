@@ -33,6 +33,7 @@ $(document).ready(function()
  
 });
 
+//añadimos el listener para mensajes desde fuera de la iframe
 window.addEventListener( "message",
           function (e) {
                 if(e.origin !== "https://revamp.ijuego.es" )
