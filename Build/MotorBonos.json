@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "karting_example",
+"dataUrl": "MotorBonos.data.unityweb",
+"wasmCodeUrl": "MotorBonos.wasm.code.unityweb",
+"wasmFrameworkUrl": "MotorBonos.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
